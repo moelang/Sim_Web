@@ -12,10 +12,6 @@ jobs:
     name: Build my project ✨
     runs-on: ubuntu-latest
     steps:
-      - name: Debug
-        run: |
-          echo ${PWD}
-          ls -alh
       # Checkout
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -40,3 +36,8 @@ jobs:
         with:
           name: Build
           path: build
+        
+      - name: Debug
+        run: |
+          echo ${PWD}
+          ls -alh
