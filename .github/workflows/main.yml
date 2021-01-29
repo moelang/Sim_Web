@@ -28,8 +28,8 @@ jobs:
       - name: Build project
         uses: webbertakken/unity-builder@v0.10
         with:
-          unityVersion: 2020.1.13f1c1
-          targetPlatform: webgl
+          unityVersion: 2020.1.13f1
+          targetPlatform: WebGL
 
       # Output
       - uses: actions/upload-artifact@v1
